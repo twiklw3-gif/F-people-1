@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f-people | Проекты</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Эффект звезд на фоне */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent url('https://www.transparenttextures.com') repeat;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .container {
+            background: rgba(13, 17, 23, 0.9);
+            border: 1px solid rgba(0, 255, 127, 0.3);
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 255, 127, 0.1);
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 255, 127, 0.8);
+        }
+
+        .cosmic-line {
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #00ff7f, #00fa9a, transparent);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 2px;
+            box-shadow: 0 0 15px #00ff7f;
+        }
+
+        .info-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .email {
+            color: #00ff7f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            font-size: 8px; /* Уменьшенный размер арта */
+            color: #00ff7f;
+            line-height: 1.1;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 15px;
+            overflow-x: auto;
+            margin: 30px 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .project-section h2 {
+            margin-top: 40px;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .project-card {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #00ff7f;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #00ff7f;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .project-link:hover {
+            background: #00cc66;
+            box-shadow: 0 0 15px #00ff7f;
+        }
+
+        .italic {
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .password {
+            background: #222;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>f-people</h1>
+    <div class="cosmic-line"></div>
+    
+    <div class="info-text">
+        Я создатель проектов, которые пока что ничего особенного не делают, но это только пока что.<br>
+        В нашей группе 2 участника (мы не ищем новых участников, но если заинтересованы, пишите на почту: 
+        <a href="mailto:twiklw3@gmail.com" class="email">twiklw3@gmail.com</a>).
+    </div>
+
+    <div class="ascii-art">
+    .o88o.                               o8o                .
+    888 `"                               `"'              .o8
+   o888oo   .oooo.o  .ooooo.   .ooooo.  oooo   .ooooo.  .o888oo oooo    ooo
+    888    d88(  "8 d88' `88b d88' `"Y8 `888  d88' `88b   888    `88.  .8'
+    888    `"Y88b.  888   888 888        888  888ooo888   888     `88..8'
+    888    o.  )88b 888   888 888   .o8  888  888    .o   888 .    `888'
+   o888o   8""888P' `Y8bod8P' `Y8bod8P' o888o `Y8bod8P'   "888"      d8'
+                                                                .o...P'
+                                                                `XER0'
+    </div>
+
+    <div class="project-section">
+        <div class="cosmic-line"></div>
+        <h2>мои проекты</h2>
+        
+        <div class="project-card">
+            <p><strong>1) Анти-пиратское решение:</strong> Мой проект, который борется с пиратским софтом. Он блокирует систему, но без вреда для неё. Если ввести пароль неправильно 10 раз, ПК или ноутбук просто выдаст синий экран смерти (BSOD).</p>
+            <p class="italic">(было проверено на Windows 10)</p>
+            <p>Пароль для разблокировки: <span class="password">092124!</span></p>
+            <a href="https://drive.google.com/file/d/17XYCVROpkioiKevf2J7HmI_HQiGa80Rh/view?usp=drive_link" class="project-link" target="_blank">Скачать проект</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
